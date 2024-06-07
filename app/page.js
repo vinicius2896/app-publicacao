@@ -23,14 +23,18 @@ export default function Home() {
   return (
     <div>
       <h1> Aula de Publicação</h1>
-      <p>Publicar um site na Versel usando NextJS e no Github Pages com arquivos estáticos </p>
+      <p>Publicar um site na Vercel usando NextJS e no Github Pages com arquivos estáticos </p>
+
+      <hr/>
+      <p style={{backgroundColor: "yellow"}}> Este é uma nova versão do meu site</p>
+      <hr/>
 
       <Link href="teste"> Ir para a página de testes</Link>
   
     <form onSubmit={(e)=> enviaFormulario(e)}>
 
       <label>
-        Digite seu nome
+        Digite seu nome:
         <input onChange={ (e)=> alteraNome(e.target)}/>
         </label>
 
